@@ -14,7 +14,7 @@ int32 main()
     All pointers are smart pointers in the Frogman++ game scripting language.
     pointers and references never dangle and they are always either null or valid.
   */
-    string* p = new string;
+    string* p = new string("Hello, Frogman");
     FE_LOG("${%s@0}", p->c_str());
     return 0;
 }
