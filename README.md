@@ -14,8 +14,8 @@ int32 main()
     All pointers are smart pointers in the Frogman++ game scripting language.
     Pointers and references never dangle, and they are always either null or valid.
   */
-    var string var * mp = new string("hi"); // a mutable string mutable pointer
-    string* p = new string("Hello, Frogman"); // a constant string pointer constant.
+    var FE::string var * mp = new FE::string("hi"); // a mutable string mutable pointer.
+    FE::string* p = new FE::string("Hello, Frogman"); // a constant string pointer constant.
     FE_LOG("${%s@0}", p->c_str());
     return 0;
 }
